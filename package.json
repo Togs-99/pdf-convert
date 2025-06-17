@@ -1,0 +1,24 @@
+{
+  "name": "pdf-to-images-converter",
+  "version": "1.0.0",
+  "description": "Servidor para converter PDFs em imagens",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pdf",
+    "converter",
+    "images",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "express": "^4.18.2",
+    "fs-extra": "^11.2.0",
+    "uuid": "^9.0.1"
+  }
+}
