@@ -2,11 +2,16 @@ version: '3.8'
 
 services:
   app:
-    image: meuapp-pdf:latest
+    build:
+      context: https://github.com/Togs-99/pdf-convert.git#main
+      dockerfile: Dockerfile
     ports:
       - "3001:3001"
     volumes:
-      - ./temp:/app/temp
+      - temp:/app/temp
     environment:
       - NODE_ENV=production
     restart: unless-stopped
+
+volumes:
+  temp:
