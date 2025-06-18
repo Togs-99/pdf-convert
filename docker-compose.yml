@@ -2,13 +2,11 @@ version: '3.8'
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: meuapp-pdf:latest
     ports:
       - "3001:3001"
     volumes:
       - ./temp:/app/temp
     environment:
       - NODE_ENV=production
-    restart: unless-stopped 
+    restart: unless-stopped
